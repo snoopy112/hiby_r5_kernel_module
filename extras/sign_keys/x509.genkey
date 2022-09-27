@@ -1,0 +1,16 @@
+[ req ]
+default_bits = 4096
+distinguished_name = req_distinguished_name
+prompt = no
+x509_extensions = myexts
+
+[ req_distinguished_name ]
+O = Magrathea
+CN = Glacier signing key
+emailAddress = slartibartfast@magrathea.h2g2
+
+[ myexts ]
+basicConstraints=critical,CA:FALSE
+keyUsage=digitalSignature
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid
