@@ -1,6 +1,6 @@
 # Build kernel module for HiBy R5 music player
 
-I use [Ubuntu 64-bit 16.04.7](https://releases.ubuntu.com/16.04/ubuntu-16.04.7-desktop-amd64.iso) on virtual machine in VMware Fusion
+I use [Ubuntu 64-bit 16.04.7](https://releases.ubuntu.com/16.04/ubuntu-16.04.7-desktop-amd64.iso) on virtual machine using VMware Fusion
 
 ### Clone this project:
 to i.e. `~/hiby_r5_kernel_module`

@@ -1,8 +1,8 @@
-export CROSS_COMPILE:=/home/user/toolchain/bin/aarch64-linux-android-
+export CROSS_COMPILE:=~/toolchain/bin/aarch64-linux-android-
 export ARCH:=arm64
 export SUBARCH:=arm64
 export CFLAGS_MODULE:="-fno-pic -w"
-export KDIR:=/home/user/kernel
+export KDIR:=~/kernel
 
 export FILE_NAME:=vol_keys
 
