@@ -76,6 +76,7 @@ cd ~/hiby_r5_kernel_module/extras
 chmod +x ./resign_boot.sh
 ./resign_boot.sh
 ```
+Dump of the bootloader you can do with QFIL (part of QPST Flash Tool, I use 2.7.496 version) on Windows machine. Firehose Programmer file is at the extras folder, `prog_emmc_firehose_8917_ddr.mbn`. This [tutorial](https://www.hovatek.com/forum/thread-31476.html) should help how to use this tool.
 
 ### Run new kernel module on device in su mode:
 ```sh
