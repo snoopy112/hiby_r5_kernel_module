@@ -204,7 +204,7 @@ static void vol_wq_handler(struct work_struct *w)
     }
 
     /* If media key holds while sleeping send key to start playing */
-    if ((smsm_state < SMSM_PROC_AWAKE || time_diff > 1) && spmi_buf[BUFFER_SIZE-1] == MEDIA_BUTTON_ID) {
+    if ((smsm_state < SMSM_PROC_AWAKE || time_diff > 1) && spmi_buf[BUFFER_SIZE-1] == MEDIA_BUTTON_ID && spmi_buf[0] != MEDIA_BUTTON_ID) {
         input_report_key(input_dev, KEY_PLAYPAUSE, 1);
         pr_info("[HS KEY] key report: %d state:1\n", KEY_PLAYPAUSE);
         input_report_key(input_dev, KEY_PLAYPAUSE, 0);
